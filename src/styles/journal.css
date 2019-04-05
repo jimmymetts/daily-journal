@@ -1,14 +1,15 @@
 
 
 body {
-    background-color: rgb(10, 158, 158);
+    background: url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    color: white;
 }
 
 
 .flex-container {
     display: flex;
     width: 100%;
-    background-color: rgb(226, 203, 172);
+    background: rgb(226, 203, 172);
     
   }
 
@@ -18,4 +19,6 @@ body {
 
 .container {
     display: flex-end;
+    
 }
+
