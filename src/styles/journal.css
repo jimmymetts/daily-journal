@@ -21,4 +21,6 @@ body {
     display: flex-end;
     
 }
-
+fieldset{
+    border: 1px solid yellow
+}
