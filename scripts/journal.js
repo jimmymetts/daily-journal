@@ -18,33 +18,61 @@
 
 // const 
 
-let journalEntries = [];
 
-
-const journalEntry= {
+let journalEntries = [
+ 
+    {
     dateOfEntry: "04/12/2019",
-    conceptsCoveres: "Objects and functions",
+    conceptsCovered: "Objects and functions",
     journalEntry: "today I learned about objects",
     moodOfTheDay: "madness"
-};
+}, 
 
-const journalEntry2= {
+{
+
     dateOfEntry: "04/15/2019",
-    conceptsCoveres: "loops",
+    conceptsCovered: "loops",
     journalEntry: "today I learned about loops",
     moodOfTheDay: "madness"
-};
+},
 
-const journalEntry3= {
+{
     dateOfEntry: "04/17/2019",
-    conceptsCoveres: "chicken monkey",
+    conceptsCovered: "chicken monkey",
     journalEntry: "today I learned about arrays",
     moodOfTheDay: "madness"
-};
+}
 
+]
 
-journalEntries.push(journalEntry, journalEntry2, journalEntry3);
+console.log(journalEntries);
 
+/*
+    Purpose: To render all journal entries to the DOM
 
+    Arguments: entries (array of objects)
+*/
+const renderJournalEntries = (entries) => {
+    entries.forEach(entry => {
+        // Selecting something in HTML with the classname of "entrylog"
+        let entryContainer = document.querySelector(".entryLog");
+        // Creates an element
+        let dateOfEntryElement = document.createElement("p");
+        let conceptsCoveredElement = document.createElement("p");
+        let entryElement = document.createElement("p");
+        let  moodOfTheDayElement = document.createElement("p");
+        // Goes to the journal entry and grabs the "journalEntry"
+        dateOfEntryElement.innerHTML = entry.dateOfEntry;
+        conceptsCoveredElement.innerHTML = entry.conceptsCovered;
+        entryElement.innerHTML = entry.journalEntry;
+        moodOfTheDayElement.innerText = entry.moodOfTheDay;
+        // "appends" the entry element (the "p" element) to the entry container (article with class of "entryLog")
+        entryContainer.appendChild(dateOfEntryElement) 
+        entryContainer.appendChild(entryElement)
+        entryContainer.appendChild(conceptsCoveredElement)
+        entryContainer.appendChild(moodOfTheDayElement)        
+    });
+}
 
-console.log(journalEntries[2].journalEntry);
+// Invoke the render function
+renderJournalEntries(journalEntries)
