@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Daily Journal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Daily Journal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" media="screen" href="styles/journal.css">
 </head>
 
 
 <body>
-     <!--main content starts-->
-     <div>
-     <center><h1>Daily Journal</h1></center>
-    </div>
-      <form action="">
-        <fieldset>
-          <h1>Date of Entry</h1>
-            <label for="journalDate"></label>
-            <input type="date" name="journalDate" id="journalDate">
+  <!--main content starts-->
+  <div>
+    <center>
+      <h1>Daily Journal</h1>
+    </center>
+  </div>
+  <form action="">
+    <fieldset>
+      <h1>Date of Entry</h1>
+      <label for="journalDate"></label>
+      <input type="date" name="journalDate" id="journalDate">
+    </fieldset>
+
+
+    <form action="">
+      <div class="container">
+        <fieldset id="Concepts">
+          <h1>Concepts Covered</h1>
+          <textarea rows="2" cols="30"></textarea>
+          </textarea>
         </fieldset>
-        
-        
-          <form action="">
-        <div class="container">
-            <fieldset id="Concepts">
-                    <h1>Concepts Covered</h1>
-                    <textarea rows="2" cols="30"></textarea>
-                    </textarea>
-            </fieldset>
-        </div>
-        
-          <form action="">
-            
-            <fieldset>
-             <h1>Journal Entry</h1>
-             <textarea rows="4" cols="50">
+      </div>
+
+      <form action="">
+
+        <fieldset>
+          <h1>Journal Entry</h1>
+          <textarea rows="4" cols="50">
             </textarea>
-            </fieldset>
-            
-        
-          <form action="">
-           
-             <fieldset>
-                <h1>Mood of The Day</h1>
-                    <select>
-                            
-                            <option value="Madness">Madness</option>
-                            <option value="Irritable">Irritable</option>
-                            <option value="Peaceful, Easy">Peaceful, Easy</option>
-                            <option value="Party Time">Party Time</option>
-                          </select>
-             </fieldset>
+        </fieldset>
 
-             
-                    <h1></h1>
-                    <form action="/action_page.php">
-                         
-                        <input type="submit" value="Record Journal Entry">
-                        </form>
-                        
-                        
-                 
 
-      </form>
-    </div>  <!--main content ends-->
+        <form action="">
 
-    <script src="../scripts/journal.js"></script>
+          <fieldset>
+            <h1>Mood of The Day</h1>
+            <select>
+
+              <option value="Madness">Madness</option>
+              <option value="Irritable">Irritable</option>
+              <option value="Peaceful, Easy">Peaceful, Easy</option>
+              <option value="Party Time">Party Time</option>
+            </select>
+          </fieldset>
+
+
+          <h1></h1>
+          <form action="/action_page.php">
+
+            <input type="submit" value="Record Journal Entry">
+          </form>
+
+
+
+
+        </form>
+
+        <h1>Journal Entries:</h1>
+        <article class="entryLog">
+
+        </article>
+
+        </div>
+        <!--main content ends-->
+
+        <script src="../scripts/journal.js"></script>
+
+
 </body>
+
 </html>
