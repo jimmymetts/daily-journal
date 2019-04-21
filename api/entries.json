@@ -1,0 +1,22 @@
+{
+    "entries": [
+        {
+            "dateOfEntry": "04/12/2019",
+            "conceptsCovered": "Objects and functions",
+            "journalEntry": "today I learned about objects",
+            "moodOfTheDay": "madness"
+        },
+        {
+            "dateOfEntry": "04/15/2019",
+            "conceptsCovered": "loops",
+            "journalEntry": "today I learned about loops",
+            "moodOfTheDay": "madness"
+        },
+        {
+            "dateOfEntry": "04/17/2019",
+            "conceptsCovered": "chicken monkey",
+            "journalEntry": "today I learned about arrays",
+            "moodOfTheDay": "madness"
+        }
+    ]
+}
